@@ -15,8 +15,10 @@ public class SafeCracker {
 
     public static void main(String[] args) {
         /* Your mission: use the tryCode method to crack the safe by trying all possible combinations */
-
-        
+    int startingNum = 0;
+    	for (int i = 9999999; i >= 0; i--) {
+    	tryCode(i);
+  		}  
     }
 
 
