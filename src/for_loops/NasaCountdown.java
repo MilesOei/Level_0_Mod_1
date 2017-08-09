@@ -1,5 +1,7 @@
 package for_loops;
 
+import javax.swing.JOptionPane;
+
 /**
  * Kata: NASA Countdown
  * 
@@ -18,12 +20,21 @@ package for_loops;
 public class NasaCountdown {
 	public static void main(String[] args) {
 		// 2. ask the user when to start (JOptionPane.showInputDialog)
+		String numCount = JOptionPane.showInputDialog("What number do you want to start the countdown on?");
 		// 3. convert the user's answer to an int (Integer.parseInt)
-
+		int numCountInt = Integer.parseInt(numCount);
 		// 4. countdown from user's starting point
+		for (int i = numCountInt; i >= 0; i--) {
+			System.out.println(numCountInt--);
+		}
 		// 1. countdown from 10 to 0
 
 		// 5. when the counting is done, print "blastoff!"
+	if(numCountInt <= 0) {
+		System.out.println("Blastoff!!!");
+	}
+	
+	
 	}
 
 static void speak(String words) {
